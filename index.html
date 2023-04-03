@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="inicio">      
+        <h1 class="titulo_principal">Cálculo IMC</h1>
+        <p>
+          IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+          Organização Mundial de Saúde para calcular o peso ideal de cada
+          pessoa.
+        </p>
+
+        <p>
+          O índice é calculado da seguinte maneira: divide-se o peso do paciente
+          pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso
+          normal quando o resultado do IMC está entre 18,5 e 24,9.
+        </p>
+
+        <p>
+          Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo
+          e compare com os índices da tabela. Importante: siga os exemplos e use
+          pontos como separadores.
+        </p>
+        <section id="imc-form">
+          <form>
+            <div class="inputs_control">
+            <label for="peso">Peso <small>(ex.: 69.2)</small></label>
+            <input type="number" name="peso" id="peso" placeholder="Quilos"/>
+
+            <label for="altura">Altura <small>(ex.: 1.70)</small></label>
+            <input type="number" name="altura" id="altura" placeholder="Metros"/>
+          </div>
+            <div class="action-control">
+              <a href="#resultado" onclick="getIMC()" id="calc-btn">Calcular</a>
+              <a href="#inicio" onclick="removeValue()" id="clear-btn">Limpar</a>
+            </div>
+          </form>
+        </section>
+      
+      <section class="tabela_imc">
+        <h2 class="titulo_tabela">Veja a interpretação do IMC</h2>
+        <table>
+          <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade <small>(Grau)</small></th>
+          </tr>
+          <tr>
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+          </tr>
+          <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+          </tr>
+        </table>
+      </section>
+      <section id="resultado">
+        <h3 id="result"></h3>
+        <p id="imc-info"></p>
+      </section>
+
+      <footer><small>&copy;Todos os direitos reservados - Everton Silva 2023</small></footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
