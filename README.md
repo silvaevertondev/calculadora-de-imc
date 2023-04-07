@@ -4,6 +4,7 @@ Para acessar: https://silvaevertondev.github.io/calculadora-de-imc/
 
 Layout Desktop:
 
-![Desktop](https://user-images.githubusercontent.com/104531602/230510713-56ad380a-c2a5-4701-a034-24dfa6affa76.PNG)
+![Calculadora IMC](https://user-images.githubusercontent.com/104531602/230518304-3c3e36d2-7134-4f51-a0ec-a7bd447f7d85.gif)
+
 
 
